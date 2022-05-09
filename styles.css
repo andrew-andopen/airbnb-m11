@@ -1,0 +1,138 @@
+@font-face {
+  font-family: Cereal Regular;
+  src: url(assets/fonts/Cereal_Rg.ttf);
+}
+
+@font-face {
+  font-family: Cereal Bold;
+  src: url(assets/fonts/Cereal_A_Bd.ttf);
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-box-shadow: 4px 13px 23px -9px rgba(51, 51, 51, 0);
+    box-shadow: 4px 13px 23px -9px rgba(51, 51, 51, 0);
+  }
+  100% {
+    -webkit-box-shadow: 4px 13px 23px -9px rgba(51, 51, 51, 0.08);
+    box-shadow: 4px 13px 23px -9px rgba(51, 51, 51, 0.08);
+  }
+}
+
+body {
+  font-family: Cereal Regular;
+  color: #333;
+}
+
+h1 {
+  font-family: Cereal Bold;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+p {
+  font-size: 32px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+header {
+  padding: 3rem 4rem;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 2000;
+}
+
+span.ul {
+  text-decoration: underline;
+}
+
+.padding {
+  padding: 8rem 5rem;
+}
+
+.max-width {
+  max-width: 1200px;
+}
+
+.margin-bottom {
+  margin-bottom: 2.5rem;
+}
+
+.hero,
+.success {
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  margin-top: 130px;
+}
+
+.success {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-heading {
+  margin-bottom: 4rem;
+}
+
+footer {
+  padding: 3rem 4rem;
+  background: #f5dce0;
+}
+
+.contact {
+  margin-bottom: 2rem;
+}
+
+.ao-logo {
+  max-width: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .padding {
+    padding: 4rem 5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .padding {
+    padding: 2rem;
+  }
+
+  header,
+  footer {
+    padding: 2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}
