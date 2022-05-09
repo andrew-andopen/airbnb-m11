@@ -56,6 +56,7 @@ select {
 label {
   position: absolute;
   pointer-events: none;
+  z-index: 10;
 }
 
 input:focus + label,
@@ -88,7 +89,7 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   border-bottom: 1px solid #333;
   -webkit-text-fill-color: #333;
-  -webkit-box-shadow: 0 0 0px 1000px rgb(249, 247, 243) inset;
+  -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
 }
 
 button {
